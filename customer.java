@@ -11,10 +11,9 @@ public class customer
         int item = sc.nextInt(); 
         while(true)
         {
-            System.out.println("enter quantity:");
-            int quantity = sc.nextInt(); 
-            add_item j =  new add_item();
-            int cost=quantity*j.price;
+            System.out.println("enter how much you want:");
+            int w_quantity = sc.nextInt();
+            int cost=w_quantity*add_item.price;
             System.out.println("cost is "+cost+ " please enter the amount:");
             int amount = sc.nextInt();
             if(amount>cost)
