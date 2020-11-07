@@ -13,14 +13,16 @@ public class customer
         {
             System.out.println("enter quantity:");
             int quantity = sc.nextInt(); 
-            int cost=quantity* add_item.price;
+            add_item j =  new add_item();
+            int cost=quantity*j.price;
             System.out.println("cost is "+cost+ " please enter the amount:");
             int amount = sc.nextInt();
             if(amount>cost)
              {
                int balance=amount-cost;
                System.out.println("please take the item");
-            System.out.println("the remaining balance is "+balance);
+               System.out.println("the remaining balance is "+balance);
+               break;
              } 
              else if(amount<cost)
              {
